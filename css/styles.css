@@ -490,6 +490,7 @@ img{
 
 .modal-cross{
     fill: #2e2f42;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .modal-btn-cross:hover,
@@ -497,9 +498,7 @@ img{
   background-color: #404bbf;
   border: none;
 }
-.close-btn-svg {
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 .modal-btn-cross:hover .modal-cross,
 .modal-btn-cross:focus .modal-cross {
   fill: #ffffff;
@@ -584,17 +583,18 @@ img{
     height: 16px;
     border-radius: 2px;
     border: 1px solid rgba(46, 47, 66, 0.4);
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     fill: transparent;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 .modal-text{
     width: 100%;
     height: 120px;
     font-size: 12px;
-    line-height: 1.17;
+    line-height: 1.17;s
     letter-spacing: 0.04em;
     color: rgba(46, 47, 66, 0.4);
     border: 1px solid rgba(46, 47, 66, 0.4);
@@ -683,6 +683,7 @@ img{
     margin-bottom: 16px; 
     resize: none;
     height: 120px;
+    line-height: 1.17;
 }
 .footer-link-wrap{
     display: block;
