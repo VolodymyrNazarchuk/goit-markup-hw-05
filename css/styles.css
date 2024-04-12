@@ -703,16 +703,17 @@ img{
 }
 
 .subsribe-input{
-    width: 100%;    
-    border: 1px solid #fff;
-    border-radius: 4px;
     width: 264px;
     height: 40px;
+    border: 1px solid #ffffff;
     background-color: transparent;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
     padding-left: 16px;
-    outline: transparent;
-    transition: border-color 300ms linear;
-    margin-right: 24px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: #ffffff;
 }
 
 .subsribe-input::placeholder{
