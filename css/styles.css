@@ -701,11 +701,6 @@ img{
     display: flex;
     gap: 24px;
 }
-.subscribe-wrap{
-    display: flex;
-    align-items:center;
-    justify-content: center;
-}
 
 .subsribe-input{
     width: 100%;    
@@ -752,8 +747,3 @@ img{
     margin-left: 16px;
     fill: #FFF;
   }
-
-    .subscribe-btn-wrap{
-       position: relative;
-        height: 40px;
-    }
