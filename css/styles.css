@@ -440,6 +440,15 @@ img{
     background-color: rgba(46, 47, 66, 0.4);
     position: fixed;
     top: 0;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden; 
+}
+
+.is-open{
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
 }
 
 .modal{
@@ -466,6 +475,15 @@ img{
     margin-bottom: 24px;
 }
 
+.modal-cross{
+    fill: #2e2f42;
+}
+.modal-btn-cross:hover{
+    background-color: #404bbf;
+}
+.modal-btn-cross:hover .modal-cross{
+    fill: #fff;
+}
 .modal-title{
     margin-bottom: 16px;
     font-weight: 500;
@@ -531,10 +549,72 @@ img{
     border-radius: 4px;
 
 }
+.check-text{
+    font-size: 12px;
+    line-height: 1.167;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+    display: flex;
+    align-items: center;
+}
+.check-text span{
+    margin-right: 8px;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
+    
+}
+
+.modal-check:checked + .check-text span{
+    background-color: #404bbf;
+}
+
+.modal-field-policy{
+    margin-bottom: 24px;
+}
+
+.modal-btn-sbm {
+    background-color:#4d5ae5;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    border-radius: 4px;
+    padding: 16px 32px;
+    min-width: 169px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-btn-sbm:hover,
+.modal-btn-sbm:focus{
+    background-color: #404BBF;
+}
+.check-icon{
+    fill:#f4f4fd;
+}
+.check-link{
+    line-height: 1.33;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #4d5ae5;
+    display: inline-block;
+    margin-left: 4px;
+}
 
 .footer-container{
     display: flex;  
     align-items: baseline;
+    gap: 80px
 }
 .footer-contacts-wrap{
     display: flex;
@@ -550,6 +630,10 @@ img{
     margin-right: 0;
 }
 
+.footer-wrap{
+    display: flex;  
+    align-items: baseline;
+}
 .footer-text {
     font-size: 16px;
     line-height: 1.5;
@@ -603,3 +687,72 @@ img{
 .footer-icon{
     fill: #f4f4fd;
 }
+
+.subsribe-text{
+    margin-bottom: 16px;
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff;
+}
+.subscribe-wrap{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.subsribe-input{
+    width: 100%;    
+    border: 1px solid #fff;
+    border-radius: 4px;
+    width: 264px;
+    height: 40px;
+    background-color: transparent;
+    padding-left: 16px;
+    outline: transparent;
+    transition: border-color 300ms linear;
+    margin-right: 24px;
+}
+
+.subsribe-input::placeholder{
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: #fff;
+}
+
+.subscribe-btn {
+    display: block;
+    background-color:#4d5ae5;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 64px 8px 24px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 165px;
+    height: 40px;
+}
+
+    .subscribe-btn-wrap{
+       position: relative;
+        height: 40px;
+
+    }
+    
+    .subscribe-icon{
+        fill: #2e2f42;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 117px;
+        fill: #fff;
+    }
