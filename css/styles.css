@@ -697,6 +697,10 @@ img{
     letter-spacing: 0.02em;
     color: #fff;
 }
+.subscribe-form{
+    display: flex;
+    gap: 24px;
+}
 .subscribe-wrap{
     display: flex;
     align-items:center;
@@ -724,35 +728,32 @@ img{
 }
 
 .subscribe-btn {
-    display: block;
-    background-color:#4d5ae5;
-    font-family: inherit;
-    font-weight: 500;
+    min-width: 165px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 16px;
+    font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    color: #fff;
+    color: #ffffff;
     cursor: pointer;
-    display: block;
+    background-color: #4d5ae5;
     border: none;
     border-radius: 4px;
-    padding: 8px 64px 8px 24px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    width: 165px;
-    height: 40px;
-}
+  }
+  .subscribe-btn:focus,
+  .subscribe-btn:hover {
+    background-color: #404bbf;
+  }
+  .subscribe-icon{
+    margin-left: 16px;
+    fill: #FFF;
+  }
 
     .subscribe-btn-wrap{
        position: relative;
         height: 40px;
-
-    }
-    
-    .subscribe-icon{
-        fill: #2e2f42;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        left: 117px;
-        fill: #fff;
     }
