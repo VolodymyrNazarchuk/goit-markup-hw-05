@@ -726,6 +726,13 @@ img{
 .modal-btn-sbm:focus{
     background-color: #404BBF;
 }
+.modal-check:checked  .check-text span{
+    background-color: #404bbf;
+    border: none;
+    fill: #F4F4FD;
+}
+
+
 .check-wrap{
     display: inline-flex;
     align-items: center;
