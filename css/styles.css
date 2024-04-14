@@ -439,7 +439,6 @@ img{
 .footer-container{
     display: flex;  
     align-items: baseline;
-    gap: 80px
 }
 .footer-contacts-wrap{
     display: flex;
@@ -465,15 +464,14 @@ img{
     letter-spacing: 0.02em;
     color: #f4f4fd;
     max-width: 264px;
-    margin-bottom: 16px; 
     resize: none;
-    height: 120px;
-    line-height: 1.17;
+
 }
 .footer-link-wrap{
     display: block;
     flex-direction: column;
     justify-content: center;
+    margin-right: auto;
 }
 .footer-link-text{
     font-weight: 500;
@@ -594,6 +592,7 @@ img{
     color: #2e2f42;
 }
 .modal-input{
+    font-size: 12px;
     width: 100%;    
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
@@ -728,7 +727,9 @@ img{
     border: none;
     fill: #f4f4fd;
 }
-
+.modal-check:focus + .check-text span {
+    border-color: #4D5AE5; 
+}
 
 .check-wrap{
     display: inline-flex;
